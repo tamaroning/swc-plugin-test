@@ -1,0 +1,16 @@
+[package]
+name = "test_plugin"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+swc_plugin = "0.30.0"
+
+[dev-dependencies]
+testing = "0.18.1"
+swc_ecmascript = { version = "0.123.0", features = ["parser"] }
+swc_ecma_transforms_testing = "0.65.0"
+swc_common = { version = "0.17.9", features = ["sourcemap"] }
